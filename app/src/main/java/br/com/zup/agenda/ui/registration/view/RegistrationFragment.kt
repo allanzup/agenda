@@ -1,5 +1,4 @@
 package br.com.zup.agenda.ui.registration.view
-
 import android.os.Bundle
 import android.text.Editable
 import androidx.fragment.app.Fragment
@@ -45,4 +44,7 @@ class RegistrationFragment : Fragment() {
                 binding.etRoad.text = it.logradouro.toEditable()
                 binding.etState.text = it.estado.toEditable()
             }
+            })
+    }
 }
+

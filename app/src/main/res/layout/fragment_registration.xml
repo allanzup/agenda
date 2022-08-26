@@ -134,16 +134,18 @@
 
         <Button
             android:id="@+id/btnHome"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="375dp"
+            android:layout_height="48dp"
             android:layout_margin="@dimen/margin16"
+            android:layout_marginTop="8dp"
             android:backgroundTint="@color/red"
             android:text="Voltar "
             android:textSize="@dimen/font16"
             app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnRegister"
-            app:layout_constraintTop_toEndOf="@id/etCity" />
+            app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
