@@ -16,5 +16,9 @@ data class CepResult(
     @SerializedName("estado")
     var estado: String,
     @SerializedName("logradouro")
-    var logradouro: String
+    var logradouro: String,
+    var name:String,
+    var phone:String,
+    var number:String
+
 ) : Parcelable

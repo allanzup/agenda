@@ -1,4 +1,4 @@
-package br.com.zup.agenda.ui.home.viewmodel
+package br.com.zup.agenda.ui.registration.viewmodel
 
 import android.app.Application
 import android.util.Log

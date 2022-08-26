@@ -5,4 +5,5 @@
     <dimen name="margin16">16dp</dimen>
     <dimen name="font_12">12sp</dimen>
     <dimen name="font16">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
 </resources>
