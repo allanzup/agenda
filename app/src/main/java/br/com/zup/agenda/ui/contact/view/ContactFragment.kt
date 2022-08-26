@@ -9,14 +9,14 @@ import androidx.lifecycle.ViewModelProvider
 import br.com.zup.agenda.data.model.CepResult
 import br.com.zup.agenda.databinding.FragmentContactBinding
 import br.com.zup.agenda.ui.contact.view.adapter.ContactAdapter
-import br.com.zup.agenda.ui.registration.viewmodel.RegisterCepViewModel
+import br.com.zup.agenda.ui.registration.viewmodel.RegisterUserViewModel
 
 class ContactFragment : Fragment() {
 
     private lateinit var binding: FragmentContactBinding
 
-    private val viewModel: RegisterCepViewModel by lazy {
-        ViewModelProvider(this)[RegisterCepViewModel::class.java]
+    private val viewModel: RegisterUserViewModel by lazy {
+        ViewModelProvider(this)[RegisterUserViewModel::class.java]
     }
 private val contactAdapter:ContactAdapter by lazy {
     ContactAdapter(arrayListOf(),this::goToDetailContact )

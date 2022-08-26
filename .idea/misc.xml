@@ -5,9 +5,10 @@
       <map>
         <entry key="..\:/Users/allan.neves/Desktop/Agenda/app/src/main/res/drawable/ic_baseline_star_rate_24yelow.xml" value="0.188" />
         <entry key="..\:/Users/allan.neves/Desktop/Agenda/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
-        <entry key="..\:/Users/allan.neves/Desktop/Agenda/app/src/main/res/layout/contact_item.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/allan.neves/Desktop/Agenda/app/src/main/res/layout/contact_item.xml" value="0.22" />
         <entry key="..\:/Users/allan.neves/Desktop/Agenda/app/src/main/res/layout/fragment_cep.xml" value="0.1796875" />
-        <entry key="..\:/Users/allan.neves/Desktop/Agenda/app/src/main/res/layout/fragment_detail.xml" value="0.1796875" />
+        <entry key="..\:/Users/allan.neves/Desktop/Agenda/app/src/main/res/layout/fragment_detail.xml" value="0.22" />
+        <entry key="..\:/Users/allan.neves/Desktop/Agenda/app/src/main/res/layout/fragment_edit_user.xml" value="0.1796875" />
         <entry key="..\:/Users/allan.neves/Desktop/Agenda/app/src/main/res/layout/fragment_registration.xml" value="0.16666666666666666" />
       </map>
     </option>
