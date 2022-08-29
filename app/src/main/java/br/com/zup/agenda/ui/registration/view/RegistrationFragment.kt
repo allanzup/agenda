@@ -39,9 +39,13 @@ class RegistrationFragment : Fragment() {
         viewModel.cepResponse.observe(viewLifecycleOwner, Observer {
             it.let {
                 binding.etCepUm.text = it.cep.toEditable()
+//                binding.etCity.text = "CIDADE: ${it.cidade}".toEditable()
                 binding.etCity.text = it.cidade.toEditable()
+//                binding.etDistrict.text = "BAIRRO: ${it.bairro}".toEditable()
                 binding.etDistrict.text = it.bairro.toEditable()
+//                binding.etRoad.text = "LOGRADOURO: ${it.logradouro}".toEditable()
                 binding.etRoad.text = it.logradouro.toEditable()
+//                binding.etState.text = "ESTADO: ${it.estado}".toEditable()
                 binding.etState.text = it.estado.toEditable()
             }
             })
