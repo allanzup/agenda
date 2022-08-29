@@ -2,11 +2,17 @@ package br.com.zup.agenda.data.model
 
 
 import android.os.Parcelable
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class CepResult(
+@Entity(tableName="tableUser")
+data class UserResult(
+    @SerializedName("id")
+    @PrimaryKey(autoGenerate = false)
+    var id: Int = 0,
     @SerializedName("bairro")
     var bairro: String,
     @SerializedName("cep")
@@ -17,8 +23,11 @@ data class CepResult(
     var estado: String,
     @SerializedName("logradouro")
     var logradouro: String,
+    @SerializedName("name")
     var name:String,
+    @SerializedName("phone")
     var phone:String,
+    @SerializedName("number")
     var number:String
 
 ) : Parcelable

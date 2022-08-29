@@ -16,7 +16,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome:"
-            android:paddingBottom="1dp">
+android:textColorHint="@color/blue"
+            android:paddingBottom="1dp"
+            app:boxStrokeColor="#3F51B5">
 
             <EditText
                 android:id="@+id/etName"

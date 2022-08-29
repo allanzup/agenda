@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import br.com.zup.agenda.data.model.CepResult
+import br.com.zup.agenda.data.model.UserResult
 import br.com.zup.agenda.databinding.FragmentContactBinding
 import br.com.zup.agenda.ui.contact.view.adapter.ContactAdapter
 import br.com.zup.agenda.ui.registration.viewmodel.RegisterUserViewModel
@@ -28,8 +28,13 @@ private val contactAdapter:ContactAdapter by lazy {
         binding = FragmentContactBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
-private fun goToDetailContact(cepResult: CepResult){
+private fun goToDetailContact(userResult: UserResult){
 
 }
+    private fun onClickRegister(){
+        binding.floatingActionButton.setOnClickListener {
+            val action=
+        }
+    }
 
 }

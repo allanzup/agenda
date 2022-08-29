@@ -3,11 +3,11 @@ package br.com.zup.agenda.ui.contact.view.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import br.com.zup.agenda.data.model.CepResult
+import br.com.zup.agenda.data.model.UserResult
 import br.com.zup.agenda.databinding.ContactItemBinding
 
-class ContactAdapter(private var contactList: MutableList<CepResult>,
-                     private val clickList: (movieResult: CepResult) -> Unit,)
+class ContactAdapter(private var contactList: MutableList<UserResult>,
+                     private val clickList: (movieResult: UserResult) -> Unit,)
     :
     RecyclerView.Adapter<ContactAdapter.ViewHolder>() {
 
@@ -27,14 +27,14 @@ class ContactAdapter(private var contactList: MutableList<CepResult>,
 
     override fun getItemCount() = contactList.size
 
-    fun updateList(newList: MutableList<CepResult>) {
+    fun updateList(newList: MutableList<UserResult>) {
         contactList = newList
         notifyDataSetChanged()
     }
 
     class ViewHolder(val binding: ContactItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
-        fun showMovieInfo(contactResult:  CepResult) {
+        fun showMovieInfo(contactResult:  UserResult) {
             binding.tvName.text = contactResult.name
 
         }
