@@ -7,7 +7,7 @@ import br.com.zup.agenda.data.model.UserResult
 import br.com.zup.agenda.databinding.ContactItemBinding
 
 class ContactAdapter(private var contactList: MutableList<UserResult>,
-                     private val clickList: (movieResult: UserResult) -> Unit,)
+                     private val clickList: (userResult: UserResult) -> Unit,)
     :
     RecyclerView.Adapter<ContactAdapter.ViewHolder>() {
 
@@ -17,10 +17,10 @@ class ContactAdapter(private var contactList: MutableList<UserResult>,
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val character = contactList[position]
-        holder.showMovieInfo(character)
+        val user = contactList[position]
+        holder.showListContact(user)
         holder.binding.CvItem.setOnClickListener {
-            clickList(character)
+            clickList(user)
         }
 
     }
@@ -34,7 +34,7 @@ class ContactAdapter(private var contactList: MutableList<UserResult>,
 
     class ViewHolder(val binding: ContactItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
-        fun showMovieInfo(contactResult:  UserResult) {
+        fun showListContact(contactResult:  UserResult) {
             binding.tvName.text = contactResult.name
 
         }

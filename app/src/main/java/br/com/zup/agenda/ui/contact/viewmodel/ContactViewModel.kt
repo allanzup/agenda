@@ -16,7 +16,7 @@ class ContactViewModel(application: Application) : AndroidViewModel(application)
     private val getUseCase = GetUseCase(application)
     val useListState = MutableLiveData<ViewState<List<UserResult>>>()
 
-    fun getAllMarvel() {
+    fun getAllUser() {
         viewModelScope.launch {
             try {
                 val response = withContext(Dispatchers.IO) {
