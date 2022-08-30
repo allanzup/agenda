@@ -8,7 +8,7 @@ import br.com.zup.agenda.data.datasource.local.dao.UserDAO
 import br.com.zup.agenda.data.model.UserResult
 
 
-@Database(entities = [UserResult::class], version = 1)
+@Database(entities = [UserResult::class], version = 3)
 abstract class UserDatabase: RoomDatabase() {
     abstract fun userDAO():UserDAO
     companion object {

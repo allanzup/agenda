@@ -11,7 +11,7 @@ import kotlinx.parcelize.Parcelize
 @Entity(tableName="tableUser")
 data class UserResult(
     @SerializedName("id")
-    @PrimaryKey(autoGenerate = false)
+    @PrimaryKey(autoGenerate = true)
     var id: Int = 0,
     @SerializedName("bairro")
     var bairro: String,

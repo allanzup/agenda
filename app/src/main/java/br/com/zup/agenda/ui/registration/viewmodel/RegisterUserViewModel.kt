@@ -40,7 +40,7 @@ class RegisterUserViewModel(application: Application) : AndroidViewModel(applica
             true
         } else {
             userResultAddState.value =
-                ViewState.Error(Throwable("Por favor preencha o campo vazio!"))
+                ViewState.Error(Throwable("Por favor preencha o campo Nome e Telefone!"))
             false
         }
     }

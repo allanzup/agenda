@@ -25,7 +25,7 @@ class RegistrationFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentRegistrationBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -38,6 +38,7 @@ class RegistrationFragment : Fragment() {
             receptCep()
             initObserver()
             clickOnButtonAdd()
+
         }
     }
 
